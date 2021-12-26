@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suro's Webpage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="handledFriendly" content="true">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            <ul class="nav-list">
+                <img id="icon" src="images/1.jpg" alt="">
+                <li class="nav-item"><a href="index.hmtl"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="employees">
+        <h2>Employees</h2>
+        <div class="employee-list">
+            <li>
+                <div class="employee-card" id="employee1">
+                    <img class="user-img" src="images/2.jpg" alt="">
+                    <span>
+                        <div class="employment-details" id="employee1-details">
+                            <span class="name-format">Ashton</span>
+                            <span class="name-format">Jacobs</span><br>
+                            <span>Developer</span><br>
+                            <span>Tech Department</span><br>
+                            <span>ajacobs@jacobs.com</span><br>
+                            <span>$43090</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+
+            <li>
+                <div class="employee-card" id="employee1">
+                    <img class="user-img" src="images/2.jpg" alt="">
+                    <span>
+                        <div class="employment-details" id="employee1-details">
+                            <span class="name-format">Joe</span>
+                            <span class="name-format">Adams</span><br>
+                            <span>CEO</span><br>
+                            <span>Executive Department</span><br>
+                            <span>jadams@jcoaches.com</span><br>
+                            <span>$45222</span><br>
+                            
+                        </div>
+                    </span>
+                </div>
+            </li>
+        </div>
+    </div>
+
+    <div class="interviews">
+        <h2>Upcoming Interviews</h2>
+        <li>
+            <div class="list-item">
+                <h3>Marketing</h3>
+                <p>Social Media Content List</p>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+
+        <li>
+            <div class="list-item">
+                <h3>Driver</h3>
+                <p>Advanced Coach Driver</p>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+
+        <li>
+            <div class="list-item">
+                <h3>Software Developer</h3>
+                <p>Full Stack Developer</p>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+    </div>
+
+    <div id="employeeModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add Employee</span>
+                </div>
+            </header>
+
+            <div class="modal-container">
+                <label for="fname">First Name</label>
+                <input type="text" id="name"><br>
+                <label for="fname">Last Name</label>
+                <input type="text" id="surname"><br>
+                <label for="fname">Department</label>
+                <input type="text" id="department"><br>
+                <label for="fname">Position</label>
+                <input type="text" id="position"><br>
+                <label for="fname">Email</label>
+                <input type="text" id="email"><br>
+                <label for="fname">Salary</label>
+                <input type="text" id="salary"><br>
+                <button id="confirmBtn" type="button" name="button" onclick="addEmployee()">Confirm</button>
+            </div>
+            <footer class="modal-footer"></footer>
+        </div>
+    </div>
+
+    
+    <div id="interviewModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add Interview</span>
+                </div>
+            </header>
+
+            <div class="modal-container">
+                <label for="fname">Department</label>
+                <input type="text" id="int-department"><br>
+                <label for="fname">Position</label>
+                <input type="text" id="int-position"><br>
+                <button id="confirmIntBtn" type="button" name="button" onclick="addInterview()">Confirm</button>
+            </div>
+            <footer class="modal-footer"></footer>
+        </div>
+    </div>
+
+    <button class="button" name="button" type="button" onclick="showAddEmpModal()">Add Employee</button>
+    <button class="button" name="button" type="button" onclick="showAddIntModal()">Add Interview</button>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>>
